@@ -1,0 +1,15 @@
+F:\temp_code\quantTool\bin\Debug\quantTool.exe.config
+F:\temp_code\quantTool\bin\Debug\quantTool.exe
+F:\temp_code\quantTool\bin\Debug\quantTool.pdb
+F:\temp_code\quantTool\obj\Debug\quantTool.csprojAssemblyReference.cache
+F:\temp_code\quantTool\obj\Debug\MainWindow.g.cs
+F:\temp_code\quantTool\obj\Debug\App.g.cs
+F:\temp_code\quantTool\obj\Debug\quantTool_MarkupCompile.cache
+F:\temp_code\quantTool\obj\Debug\quantTool_MarkupCompile.lref
+F:\temp_code\quantTool\obj\Debug\MainWindow.baml
+F:\temp_code\quantTool\obj\Debug\quantTool.g.resources
+F:\temp_code\quantTool\obj\Debug\quantTool.Properties.Resources.resources
+F:\temp_code\quantTool\obj\Debug\quantTool.csproj.GenerateResource.cache
+F:\temp_code\quantTool\obj\Debug\quantTool.csproj.CoreCompileInputs.cache
+F:\temp_code\quantTool\obj\Debug\quantTool.exe
+F:\temp_code\quantTool\obj\Debug\quantTool.pdb

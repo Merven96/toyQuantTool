@@ -1,0 +1,55 @@
+﻿<Window x:Class="quantTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:quantTool"
+        mc:Ignorable="d"
+        Title="数字货币查询工具" Height="300" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        
+        <TextBlock Text="历史周期单位:" Grid.Row="0"  Grid.Column="0"/>
+        <ComboBox x:Name="periodType"  Grid.Column="1" Grid.Row="0" SelectedIndex="2">
+            <ComboBoxItem Content="minute"/>
+            <ComboBoxItem Content="hour"/>
+            <ComboBoxItem Content="day"/>
+            <ComboBoxItem Content="week"/>
+            <ComboBoxItem Content="month"/>
+        </ComboBox>
+
+        <TextBlock Text="币种:" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"/>
+        <ComboBox x:Name="quantType" Grid.Column="3"  Grid.Row="0" SelectedIndex="0">
+            <ComboBoxItem Content="BTC"/>
+        </ComboBox>
+
+        <TextBlock Text="历史周期数" Grid.Row="2" Grid.Column="0"/>
+        <TextBox x:Name="periodNum" Text="7" Grid.Row="2"  Grid.Column="1"/>
+
+        <TextBlock x:Name="displayBlock" Grid.Row="4" Grid.ColumnSpan="4" Background="AliceBlue"/>
+
+        <Button x:Name="queryButton" Content="查询" Click="queryButton_Click"  Grid.Row="6" Grid.ColumnSpan="2"/>
+        
+        <TextBlock Text="自动刷新：" Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <ComboBox x:Name="rePaintCombo" Grid.Column="3" Grid.Row="6" SelectedIndex="0">
+            <ComboBoxItem Content="从不" />
+            <ComboBoxItem Content="每秒"/>
+            <ComboBoxItem Content="每分"/>
+            <ComboBoxItem Content="每小时"/>
+        </ComboBox>
+    </Grid>
+</Window>
